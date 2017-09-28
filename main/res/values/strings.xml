@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Restaurant Hub</string>
+    <string name="title_activity_sign_up_form">Sign Up</string>
+    <string name="title_activity_success_page">Success</string>
+    <string name="title_activity_login_page">Login</string>
+    <string name="title_activity_booking_page">Booking</string>
+    <string name="title_activity_discover_page">Discover</string>
+    <string name="title_activity_search_page">Search</string>
+    <string name="title_activity_forgot_password_page">Forgot Password</string>
+    <string name="title_activity_about_page">About</string>
+    <string name="title_activity_location_page">Location</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="login_button">LOGIN</string>
+    <string name="signup_button">SIGN UP</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_facebook">Login via Facebook</string>
+    <string name="login_google_plus">Login via Google+</string>
+    <string name="signup_facebook">Sign up via Facebook</string>
+    <string name="signup_google_plus">Sign up via Google+</string>
+    <string name="already_have_an_account">Already have an account? Log in</string>
+    <string name="search_hint">Restaurant, cuisine or dish</string>
+    <string name="place_order">Place Order</string>
+    <string name="payment_plan">Payment Plan</string>
+    <string name="place_order_message">Start you day by ordering for that wonderful meal</string>
+    <string name="payment_plan_message">Choose your monthly payment. Pay now or later</string>
+    <string name="hello_default_message">Hello Foodie</string>
+    <string name="daily_default_menu">BREAKFAST ?</string>
+    <string name="order_button">ORDER</string>
+    <string name="card_expiration_format">Expiration date (mm/yyyy)</string>
+    <string name="ccv_hint">CCV three (3) digit</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="card_details_header">Enter Card Details</string>
+    <string name="total">Total</string>
+    <string name="amount_default">$15</string>
+    <string name="action_perform">Perform Action</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="restaurant_name">Tantalizer</string>
+    <string name="restaurant_order_default_message">Orientals Hotel is preparing your meal</string>
+    <string name="restaurant_default_address">12 Adewole Kuku, Off fola oshibo street, Lekki phase 1, Lagos</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="discover">Discover</string>
+    <string name="order_history">Order History</string>
+    <string name="fund_account">Fund Account</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="rate_app">Rate App</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="popular_restaurants">Popular Restaurants</string>
+    <string name="app_version">1.0</string>
+    <string name="title_activity_settings_page">Settings</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="amount">Amount</string>
+    <string name="card_no">Card Number</string>
+    <string name="exp_year">Expire Year</string>
+    <string name="exp_month">Expire Month</string>
+    <string name="cvv">CVV</string>
+
+    <string-array name="month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="facebook_app_id">450916575108594</string>
+    <string name="paystack_key">pk_test_589c2093acde941a50d58441624a73235e0f5d8e</string>
+</resources>

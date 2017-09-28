@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahyoxsoft.restauranthub.main.SearchPage">
+
+    <LinearLayout
+        android:id="@+id/above"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/search_toolbar"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/scroll_view"
+        android:layout_below="@+id/above">
+
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

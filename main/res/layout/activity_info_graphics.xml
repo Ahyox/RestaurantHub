@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context="com.ahyoxsoft.restauranthub.InfoGraphics">
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="Skip Login"/>
+
+    <LinearLayout
+        android:layout_below="@+id/skip"
+        android:layout_above="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- This is where the info graphics go into -->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/layout_below"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

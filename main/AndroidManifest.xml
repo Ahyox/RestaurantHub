@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ahyoxsoft.restauranthub" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="co.paystack.android.PublishableKey"
+            android:value="@string/paystack_key"/>
+
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.Dashboard"
+            android:theme="@style/NoActionBar" >
+        </activity>
+        <activity
+            android:name=".InfoGraphics"
+            android:noHistory="true"
+            android:theme="@style/NoActionBar" >
+        </activity>
+        <activity
+            android:name=".auth.SignUpForm"
+            android:label="@string/title_activity_sign_up_form"
+            android:parentActivityName=".InfoGraphics" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoGraphics" />
+        </activity>
+        <activity
+            android:name=".main.OrderSuccessPage"
+            android:label="@string/title_activity_success_page"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".main.SearchPage"
+            android:label="@string/title_activity_search_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".main.DiscoverPage"
+            android:label="@string/title_activity_discover_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".main.BookingPage"
+            android:label="@string/title_activity_booking_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".main.OrderReviewPage"
+            android:noHistory="true"
+            android:parentActivityName=".main.BookingPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.BookingPage" />
+        </activity>
+        <activity
+            android:name=".auth.LoginPage"
+            android:label="@string/title_activity_login_page"
+            android:parentActivityName=".InfoGraphics" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".InfoGraphics" />
+        </activity>
+        <activity
+            android:name=".main.RestaurantListing"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".auth.ForgotPassword"
+            android:label="@string/title_activity_forgot_password_page"
+            android:noHistory="true"
+            android:parentActivityName=".auth.LoginPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".auth.LoginPage" />
+        </activity>
+        <activity
+            android:name=".drawer.AboutPage"
+            android:label="@string/title_activity_about_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".auth.ResetPasswordPage"
+            android:noHistory="true"
+            android:parentActivityName=".auth.ForgotPassword" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".auth.ForgotPassword" />
+        </activity>
+        <activity
+            android:name=".drawer.SettingsPage"
+            android:label="@string/title_activity_settings_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name=".main.LocationPage"
+            android:label="@string/title_activity_location_page"
+            android:noHistory="true"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:noHistory="true"
+            android:name=".main.FundAccount"
+            android:parentActivityName=".main.Dashboard" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".main.Dashboard" />
+        </activity>
+        <activity
+            android:noHistory="true"
+            android:name=".main.SuccessPage" >
+        </activity>
+    </application>
+
+</manifest>
